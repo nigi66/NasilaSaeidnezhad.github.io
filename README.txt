@@ -1,7 +1,6 @@
 # Nasila Saeidnezhad - Portfolio Website
 
-This repository hosts the source code for my personal portfolio website: [Nasila Saeidnezhad](https://nigi66.github.io/NasilaSaeidnezhad.github.io
-).
+This repository hosts the source code for my personal portfolio website: [Nasila Saeidnezhad](https://nigi66.github.io/NasilaSaeidnezhad.github.io).
 
 The website showcases my skills, projects, and professional background as a **Data Analyst**.
 
