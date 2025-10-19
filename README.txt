@@ -1,32 +1,46 @@
-Massively by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Nasila Saeidnezhad - Portfolio Website
 
+This repository hosts the source code for my personal portfolio website: [Nasila Saeidnezhad](https://nigi66.github.io/NasilaSaeidnezhad.github.io
+).
 
-This is Massively, a text-heavy, article-oriented design built around a huge background
-image (with a new parallax implementation I'm testing) and scroll effects (powered by
-Scrollex). A *slight* departure from all the one-pagers I've been doing lately, but one
-that fulfills a few user requests and makes use of some new techniques I've been wanting
-to try out. Enjoy it :)
+The website showcases my skills, projects, and professional background as a **Data Analyst**.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+---
 
-(* = not included)
+## 🌟 Features
 
-AJ
-aj@lkn.io | @ajlkn
+- **Intro Section**: A brief introduction with my name, profession, and LinkedIn link.  
+- **Skills Section**: Organized in a 2×2 grid with proficiency levels shown using battery icons.  
+- **Projects Section**: Highlights my projects with descriptions, images, and links to detailed pages.  
+- **Contact Section**: Location, email, and social media links.  
+- Responsive design optimized for both desktop and mobile.  
+- Built using the **Massively** HTML5 UP template with custom modifications.
 
+---
 
-Credits:
+## 🛠️ Technologies Used
 
-	Demo Images:
-		Unsplash (unsplash.com)
+- **HTML5 / CSS3**
+- **JavaScript / jQuery**
+- **Font Awesome** for icons
+- **Git & GitHub** for version control
+- **GitHub Pages** for hosting
 
-	Icons:
-		Font Awesome (fontawesome.io)
+---
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+## 📂 Repository Structure
+
+NasilaSaeidnezhad.github.io/
+│
+├─ index.html # Main portfolio page
+├─ project_*.html # Individual project pages
+├─ assets/
+│ ├─ css/
+│ │ ├─ main.css
+│ │ └─ noscript.css
+│ └─ js/
+│ ├─ main.js
+│ ├─ jquery.min.js
+│ └─ other JS files
+├─ images/ # All images used in the website
+└─ README.md # This file
