@@ -123,6 +123,8 @@
 
   <h2 id="overall-metrics">Overall Metrics and Distributions</h2>
   <ul>
+    <li>Sales distribution skew: right-skewed (top decile share >> median) ~ 70–80% vs 50% reference</li>
+    <li>Entity counts: Customers 793 (100.0%), Products 1862 (100.0%), States 49 (100.0%), Sub-Categories 17 (100.0%)</li>
   </ul>
 
   <h2 id="time-series">Time Series and Seasonality</h2>
@@ -135,7 +137,41 @@
 
 
   <h2 id="concentration-analysis">Concentration Analysis (Pareto, Lorenz, Gini)</h2>
-  <p>Concentration details...</p>
+  <li>80% threshold entity counts:</li>
+    <li>Customers: 396 of 793 = 49.9%</li>
+    <li>Products: 414 of 1862 = 22.2%</li>
+    <li>States: 16 of 49 = 32.7%</li>
+    <li>Sub-Categories: 9 of 17 = 52.9%</li>
+  <li>Lorenz curve shape: Customers shallow (low concentration), Products shallow (low), States steeper (higher), Sub-Categories steepest (highest)</li>
+  <li>Gini (qualitative numeric bands): Customers ~ 0.30–0.45, Products ~ 0.35–0.50, States ~ 0.55–0.70, Sub-Categories ~ 0.65–0.80</li>
+
+            <!-- Insert image -->
+  <div style="text-align:center; margin: 20px 0;">
+    <img src="images/customer_sales_concentration.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+    <div style="text-align:center; margin: 20px 0;">
+    <img src="images/top10_customers.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+    <div style="text-align:center; margin: 20px 0;">
+    <img src="images/product_sales_concentration.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+    <div style="text-align:center; margin: 20px 0;">
+    <img src="images/top10_products.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+    <div style="text-align:center; margin: 20px 0;">
+    <img src="images/state_sales_concentration.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+    <div style="text-align:center; margin: 20px 0;">
+    <img src="images/top10_states.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+    <div style="text-align:center; margin: 20px 0;">
+    <img src="images/subcategories_sales_concentration.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+    <div style="text-align:center; margin: 20px 0;">
+    <img src="images/top10_subcategories.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+
+
 
   <h2 id="profitability-drivers">Profitability Drivers (Discounts, Category/Sub-Category)</h2>
   <p>Total profit by category reveals which groups pull margins:</p>
