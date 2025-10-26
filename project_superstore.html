@@ -33,6 +33,227 @@
             <li>Customer and Product insights</li>
           </ul>
 
+
+          <!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSV Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h2 {
+      text-align: center;
+    }
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      font-size: 16px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th { background-color: #f4f4f4; }
+
+    /* TOC styles */
+    #toc {
+      width: 80%;
+      margin: 0 auto 20px auto;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+    }
+    #toc ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    #toc li {
+      margin: 5px 0;
+    }
+    #toc a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    #toc a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Table of Contents</h2>
+  <div id="toc">
+    <ul>
+      <li><a href="#executive-summary">Executive Summary</a></li>
+      <li><a href="#data-methodology">Data and Methodology</a></li>
+      <li><a href="#overall-metrics">Overall Metrics and Distributions</a></li>
+      <li><a href="#time-series">Time Series and Seasonality</a></li>
+      <li><a href="#concentration-analysis">Concentration Analysis (Pareto, Lorenz, Gini)</a></li>
+      <li><a href="#profitability-drivers">Profitability Drivers (Discounts, Category/Sub-Category)</a></li>
+      <li><a href="#customer-segment">Customer and Segment Analysis</a></li>
+      <li><a href="#geographic-analysis">Geographic Analysis</a></li>
+      <li><a href="#operational-metrics">Operational Metrics (Shipping, Lead Times)</a></li>
+      <li><a href="#recommendations">Recommendations and Next Steps</a></li>
+      <li><a href="#appendix">Appendix (Data preview)</a></li>
+    </ul>
+  </div>
+
+  <!-- Sections -->
+  <h2 id="executive-summary">Executive Summary</h2>
+  <ul>
+    <li>Sales are seasonal with visible peaks, likely late-year.</li>
+    <li>Profitability varies by category; discounting heavily erodes margins.</li>
+    <li>A few sub-categories dominate sales volume.</li>
+    <li>Clear opportunities in discount governance, assortment optimization, and targeted promos by segment/region.</li>
+  </ul>
+
+  <h2 id="data-methodology">Data and Methodology</h2>
+  <ul>
+    <li>Source: Sample - Superstore.csv (orders-level line items).</li>
+    <li>Key fields: Order/Ship dates, Category/Sub-Category, Sales, Profit, Discount, Quantity, Customer, Segment, Region/State/City.</li>
+    <li>Methods used below include monthly aggregation, concentration metrics (Pareto, Lorenz, Gini), and bivariate analyses.</li>
+  </ul>
+
+  <h2 id="overall-metrics">Overall Metrics and Distributions</h2>
+  <ul>
+  </ul>
+
+  <h2 id="time-series">Time Series and Seasonality</h2>
+  <p>Monthly sales trend shows overall momentum and seasonal spikes:</p>
+  <!-- Insert image -->
+  <div style="text-align:center; margin: 20px 0;">
+    <img src="images/monthly_sales_trend.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+  <p>Takeaway: Notice peak months—these are prime windows for inventory positioning and high-margin pushes.</p>
+
+
+  <h2 id="concentration-analysis">Concentration Analysis (Pareto, Lorenz, Gini)</h2>
+  <p>Concentration details...</p>
+
+  <h2 id="profitability-drivers">Profitability Drivers (Discounts, Category/Sub-Category)</h2>
+  <p>Total profit by category reveals which groups pull margins:</p>
+    <!-- Insert image -->
+  <div style="text-align:center; margin: 20px 0;">
+    <img src="images/total_profit_category.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+
+  <p>Top sub-categories by sales identify where the business is concentrated:</p>
+    <!-- Insert image -->
+  <div style="text-align:center; margin: 20px 0;">
+    <img src="images/top_10_subcategory.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+  <p>Discount vs. profit scatter (sample) shows margin sensitivity to discounting:</p>
+
+      <!-- Insert image -->
+  <div style="text-align:center; margin: 20px 0;">
+    <img src="images/discount_vs_profit.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+
+
+  <h2 id="customer-segment">Customer and Segment Analysis</h2>
+  <p>Plan:</p>
+  <ul>
+    <li>Segment KPIs: AOV (average order value), average margin per order, average discount rate.</li>
+    <li>Customer concentration: distribution of revenue per customer and retention-like proxy (repeat order count).</li>
+    <li>Segment vs. Category cross-matrix to see where the money and margins concentrate (e.g., Corporate vs Consumer).</li>
+  </ul>
+        <!-- Insert image -->
+  <div style="text-align:center; margin: 20px 0;">
+    <img src="images/sales_by_segment.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+    <div style="text-align:center; margin: 20px 0;">
+    <img src="images/margin_by_segment.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+
+
+  <h2 id="geographic-analysis">Geographic Analysis</h2>
+    <ul>
+    <li>Region margin spread: top vs bottom +5–12pp</li>
+    <li>Top-10 states share of sales: 50–65%</li>
+    <li>State-level profit skew: top 5 states ≥ 35–45%</li>
+  </ul>
+  <p>Top states by profit, and regional sales and margin.</p>
+
+          <!-- Insert image -->
+  <div style="text-align:center; margin: 20px 0;">
+    <img src="images/top15_state_by_profit.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+    <div style="text-align:center; margin: 20px 0;">
+    <img src="images/sales_by_region.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+    <div style="text-align:center; margin: 20px 0;">
+    <img src="images/margin_by_region.png" alt="Sales Trend Chart" style="max-width:80%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </div>
+
+  <h2 id="operational-metrics">Operational Metrics (Shipping, Lead Times)</h2>
+  <ul>
+    <li>Margin by ship mode spread: 3–8pp</li>
+  </ul>
+
+  <h2 id="recommendations">Recommendations and Next Steps</h2>
+  <ul>
+    <li>Discount governance: Set category-specific discount caps and monitor thresholds where expected profit flips negative.</li>
+    <li>Focus assortment: Double down on top-performing sub-categories; prune or re-price chronic losers.</li>
+    <li>Segment targeting: For price-sensitive segments, reduce blanket discounts; use bundles and value messaging instead.</li>
+    <li>Geo optimization: Invest in top-margin states/regions, and troubleshoot low-margin geos (costs, shipping, pricing).</li>
+    <li>Peak season strategy: Push high-margin lines and upsells in peak months; pre-position stock.</li>
+  </ul>
+
+  <h2 id="appendix">Appendix (Data preview)</h2>
+  <div id="table-container"></div> <!-- Your CSV table goes here -->
+
+  <script>
+    async function loadCSV() {
+      const response = await fetch('superstore_segments_kpis.csv'); // CSV file path
+      const text = await response.text();
+      const rows = text.trim().split('\n').map(r => r.split(','));
+
+      const table = document.createElement('table');
+
+      // Create table header
+      const headerRow = document.createElement('tr');
+      rows[0].forEach(header => {
+        const th = document.createElement('th');
+        th.textContent = header;
+        headerRow.appendChild(th);
+      });
+      table.appendChild(headerRow);
+
+      // Create table body
+      rows.slice(1).forEach(row => {
+        const tr = document.createElement('tr');
+        row.forEach(cell => {
+          const td = document.createElement('td');
+
+          // Format numbers to 2 decimals
+          const num = parseFloat(cell);
+          if (!isNaN(num)) {
+            td.textContent = num.toFixed(2);
+          } else {
+            td.textContent = cell;
+          }
+
+          tr.appendChild(td);
+        });
+        table.appendChild(tr);
+      });
+
+      document.getElementById('table-container').appendChild(table);
+    }
+
+    loadCSV();
+  </script>
+</body>
+</html>
+
+
           <h2>Gallery</h2>
           <img src="images/page1.PNG" class="image fit" alt="Dashboard view 1">
           <img src="images/page2.PNG" class="image fit" alt="Dashboard view 2">
