@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+-->
+<html>
+	<head>
+		<title>Blog | Nasila Saeidnezhad</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Nasila Saeidnezhad</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Portfolio</a></li>
+					<li class="active"><a href="blog.html">Blog</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://linkedin.com/in/dr-ing-nasila-saeid-nezhad-aa5b7653" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/nigi66" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.kaggle.com/nazilasaeednejad" class="icon brands alt fa-kaggle"><span class="label">Kaggle</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Post -->
+				<section class="post">
+					<header class="major">
+						<h1>Understanding Data Categories,<br />Storage, and Analysis</h1>
+						<p>A guide to modern data concepts, with examples.</p>
+					</header>
+
+					<!-- Data Categories -->
+					<h2>🧩 Data Categories</h2>
+					<h3>1. Structured Data</h3>
+					<p>Organized in rows and columns with a fixed schema.</p>
+					<ul>
+						<li><b>Examples:</b> Excel, MySQL, Oracle</li>
+						<li><b>Use Case:</b> Banking transactions, sales records</li>
+					</ul>
+					<blockquote>Example: A table of customer purchases with columns like <code>Customer_ID</code>, <code>Date</code>, and <code>Amount</code>.</blockquote>
+
+					<h3>2. Unstructured Data</h3>
+					<p>Data without a predefined structure or schema.</p>
+					<ul>
+						<li><b>Examples:</b> PDF, JPEG, MP3</li>
+						<li><b>Use Case:</b> Sentiment analysis on social media or audio transcripts.</li>
+					</ul>
+
+					<h3>3. Semi-Structured Data</h3>
+					<p>Partially organized data containing tags or markers (no fixed columns).</p>
+					<ul>
+						<li><b>Examples:</b> XML, JSON, NoSQL (MongoDB)</li>
+					</ul>
+					<pre><code>{
+  "city": "London",
+  "temperature": 18,
+  "unit": "Celsius"
+}</code></pre>
+
+					<hr />
+
+					<!-- Data Storage -->
+					<h2>🏗️ Data Storage Systems</h2>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Storage Type</th>
+									<th>Stores</th>
+									<th>Example Tools</th>
+									<th>Typical Use</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Database</td>
+									<td>Structured data</td>
+									<td>MySQL, Oracle</td>
+									<td>Transaction systems</td>
+								</tr>
+								<tr>
+									<td>Data Lake</td>
+									<td>Structured + Raw + Unstructured data</td>
+									<td>AWS S3, Azure Data Lake</td>
+									<td>Big Data & ML</td>
+								</tr>
+								<tr>
+									<td>Data Warehouse</td>
+									<td>Structured, cleaned data</td>
+									<td>Snowflake, Redshift</td>
+									<td>Analytics & reporting</td>
+								</tr>
+								<tr>
+									<td>Data Mart</td>
+									<td>Subset of a data warehouse</td>
+									<td>Power BI, Tableau extracts</td>
+									<td>Department-level analysis</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<blockquote>
+						<b>Analogy:</b><br>
+						Database → a well-organized library.<br>
+						Data Lake → a large storage room of all books.<br>
+						Data Warehouse → a curated collection of best books.<br>
+						Data Mart → a personal shelf for one department.
+					</blockquote>
+
+					<hr />
+
+					<!-- Data Processing -->
+					<h2>⚙️ Data Processing & Management</h2>
+					<h3>Data Modeling</h3>
+					<p>Defines how data is structured — tables, relationships, and keys.</p>
+
+					<h3>Data Pipeline</h3>
+					<p>Series of steps that move and process data from source to destination.</p>
+
+					<h3>ETL (Extract, Transform, Load)</h3>
+					<p>Extract data → Transform → Load into warehouse. Ideal for traditional data systems.</p>
+
+					<h3>ELT (Extract, Load, Transform)</h3>
+					<p>Load raw data first, then transform inside modern cloud warehouses like BigQuery or Snowflake.</p>
+
+					<hr />
+
+					<!-- Data Analysis -->
+					<h2>📈 Data Analysis Techniques</h2>
+					<h3>Descriptive Statistics (EDA)</h3>
+					<p>Summarizes data using mean, median, and standard deviation to understand trends.</p>
+
+					<h3>Inferential Statistics (Hypothesis Testing / A/B Testing)</h3>
+					<p>Tests assumptions or changes, such as “Did the new design increase conversion rate?”</p>
+
+					<h3>Time Series Analysis</h3>
+					<p>Identifies trends, seasonality, and cyclical patterns — useful for forecasting sales or revenue.</p>
+
+					<hr />
+
+					<!-- Reporting -->
+					<h2>🪞 Reporting and Performance Tracking</h2>
+					<h3>Data Visualization</h3>
+					<p>Transforms insights into visual dashboards using Power BI or Tableau.</p>
+
+					<h3>MOM, YOY, and YTD</h3>
+					<ul>
+						<li><b>MoM:</b> Month-over-Month change</li>
+						<li><b>YoY:</b> Year-over-Year comparison</li>
+						<li><b>YTD:</b> Year-to-Date cumulative performance</li>
+					</ul>
+
+					<h3>KPI and OKR</h3>
+					<ul>
+						<li><b>KPI (Key Performance Indicator):</b> Quantitative measure of business success (e.g., customer retention rate).</li>
+						<li><b>OKR (Objectives & Key Results):</b> Goal-setting framework linking objectives to measurable results.
+							<ul>
+								<li><b>Objective:</b> Improve customer satisfaction</li>
+								<li><b>Key Result:</b> Increase NPS from 70 → 85</li>
+							</ul>
+						</li>
+					</ul>
+
+					<hr />
+
+					<!-- Example Workflow -->
+					<h2>🧰 Example Workflow</h2>
+					<p><b>Scenario:</b> An e-commerce company wants to analyze customer buying trends.</p>
+					<ol>
+						<li>Collect structured sales data (MySQL) and unstructured reviews (PDF).</li>
+						<li>Store all data in a <b>Data Lake</b>.</li>
+						<li>Perform <b>ETL</b> to clean and load data into a <b>Data Warehouse</b>.</li>
+						<li>Model data (customers → orders → products).</li>
+						<li>Analyze trends and forecast future sales.</li>
+						<li>Visualize KPIs in <b>Power BI</b>.</li>
+					</ol>
+
+				</section>
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section class="split contact">
+					<section class="alt">
+						<h3>Location</h3>
+						<p>Baden-Württemberg, Germany</p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="#">saeednezhad@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://linkedin.com/in/dr-ing-nasila-saeid-nezhad-aa5b7653" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/nigi66" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.kaggle.com/nazilasaeednejad" class="icon brands alt fa-kaggle"><span class="label">Kaggle</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
